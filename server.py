@@ -47,6 +47,7 @@ if __name__ == '__main__':
             while True:
                 bytes_data = conn.recv(1024)
                 data_string = bytes_data.decode('utf-8')
+                # for testing experience just found all digits
                 digits_one = re.findall('\d', data_string)
                 digits_two = re.findall('\d[0-9]', data_string)
                 digits_three = re.findall('\d[0-9][0-9]', data_string)
