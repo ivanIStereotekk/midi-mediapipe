@@ -2,8 +2,7 @@
 
 > [!NOTE]
 > I still working with it when i have time for it.
-
-### ENG TEXT
+---
 Time to time i experimenting with coding and interesting technologies. There is a result of my experiments with Open CV , 
 Ableton Live, MIDI IN/OUT. 
 In a nutshell here is a video camera which streams signal toward Python application so then computer vision detects landmarks on my hand. 
@@ -12,7 +11,7 @@ experimenting with opencv / mediapipe.
 
 [![Превью видео](images/sc-001.png)](images/screen-rec1.mov)
 
---
+---
 ## Детекция поз и переобразование данных о метках на видео в MIDI звуковой сигнал || Ableton Live
 > [!NOTE]
 > В разработке по мере возможности и времени .
