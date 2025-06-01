@@ -29,7 +29,6 @@ CENTER_NOTES = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B']
 
 
 
-
 midi_inst = MidiServer()
 if __name__ == '__main__':
     print('MIDI Server is OK!')

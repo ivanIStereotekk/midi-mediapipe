@@ -55,6 +55,3 @@ with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as 
     cap.release()
     cv2.destroyAllWindows()
 
-#https://github.com/google/mediapipe/tree/master/docs/solutions
-
-#https://github.com/google/mediapipe/blob/master/docs/solutions/pose_classification.md
