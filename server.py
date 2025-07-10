@@ -6,10 +6,15 @@ from rtmidi import *
 from rtmidi.midiconstants import NOTE_OFF, NOTE_ON
 
 
-class MidiServer(object):
+class MidiServicer(object):
+    """ This class works with MIDI IN / OUT
+
+    Args:
+        object (_type_): _description_
+    """
     def __new__(cls):
         if not hasattr(cls, 'instance'):
-            cls.instance = super(MidiServer, cls).__new__(cls)
+            cls.instance = super(MidiServicer, cls).__new__(cls)
             return cls.instance
 
     def __init__(self):
@@ -23,15 +28,15 @@ class MidiServer(object):
             self.MIDIOUT.send_message([NOTE_OFF, NOTE, 0])
             time.sleep(0.1)
 
-
+# List of Notes
 CENTER_NOTES = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B']
 
 
 
 
-midi_inst = MidiServer()
+midi_inst = MidiServicer()
 if __name__ == '__main__':
-    print('MIDI Server is OK!')
+    print('MIDI Server started!')
     HOST = '127.0.0.1'
     PORT = 65432
     
